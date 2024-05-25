@@ -23,7 +23,16 @@ export const Footer = () => {
       <div>
         <img src="/imagens/logo.png" alt="logo do Organo" />
       </div>
-      <div className="copyright">Densenvolvido por José Netto</div>
+      <div className="copyright">
+        Densenvolvido por{" "}
+        <a
+          href="https://www.linkedin.com/in/josenettojn/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          José Netto
+        </a>
+      </div>
     </section>
   );
 };
