@@ -4,7 +4,7 @@ import { DropDown } from "../DropDown/DropDown";
 import { Button } from "../Button";
 import { useState } from "react";
 
-export const Formulario = () => {
+export const Formulario = (props) => {
   const times = [
     "Programação",
     "Front-End",
@@ -15,14 +15,19 @@ export const Formulario = () => {
     "Inovação e Gestão",
   ];
 
-  const [name, setName] = useState("");
+  const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
   const [imagem, setImagem] = useState("");
   const [time, setTime] = useState("");
 
   const whenSave = (e) => {
-    console.log("Cadastrado com sucesso", name, cargo, imagem, time);
     e.preventDefault();
+    props.registeredCollaborators({
+      nome,
+      cargo,
+      imagem,
+      time,
+    });
   };
 
   return (
@@ -33,8 +38,8 @@ export const Formulario = () => {
           required={true}
           name="Nome"
           placeholder="Digite seu nome"
-          value={name}
-          whenChanging={(value) => setName(value)}
+          value={nome}
+          whenChanging={(value) => setNome(value)}
         />
         <TextField
           required={true}
