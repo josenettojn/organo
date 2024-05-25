@@ -9,6 +9,7 @@ export const DropDown = (props) => {
         required={props.required}
         onChange={(e) => props.whenChanging(e.target.value)}
       >
+        <option>Selecione uma opção</option>
         {props.itens.map((item) => {
           return <option key={item}>{item}</option>;
         })}
