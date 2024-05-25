@@ -5,16 +5,6 @@ import { Button } from "../Button";
 import { useState } from "react";
 
 export const Formulario = (props) => {
-  const times = [
-    "Programação",
-    "Front-End",
-    "Data Science",
-    "Devops",
-    "UX e Design",
-    "Mobile",
-    "Inovação e Gestão",
-  ];
-
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
   const [imagem, setImagem] = useState("");
@@ -58,7 +48,7 @@ export const Formulario = (props) => {
         <DropDown
           required={true}
           label="Time"
-          itens={times}
+          itens={props.times}
           value={time}
           whenChanging={(value) => setTime(value)}
         />
