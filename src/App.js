@@ -89,8 +89,8 @@ function App() {
           newCollaboratorsAdded(collaborator)
         }
       />
-      <section>
-        <h1>Minha organização</h1>
+      <section className="times">
+        <h1 className="title">Minha organização</h1>
         {times.map((time) => (
           <Time
             toFavorite={resolvetoFavorite}
