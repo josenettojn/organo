@@ -29,6 +29,8 @@ export const Time = (props) => {
                 cargo={colaborador.cargo}
                 imagem={colaborador.imagem}
                 whenDeleting={props.whenDeleting}
+                toFavorite={props.toFavorite}
+                colaboradores={colaborador}
               />
             );
           })}

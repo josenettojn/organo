@@ -8,6 +8,7 @@ export const inicial = [
       "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
     time: "Programação",
     id: uuidv4(),
+    favorite: true,
   },
   {
     nome: "DANIEL ARTINE",
@@ -16,6 +17,7 @@ export const inicial = [
       "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
     time: "Programação",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "GUILHERME LIMA",
@@ -24,6 +26,7 @@ export const inicial = [
       "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
     time: "Programação",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "PAULO SILVEIRA",
@@ -32,6 +35,7 @@ export const inicial = [
       "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
     time: "Programação",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "JULIANA AMOASEI",
@@ -40,6 +44,7 @@ export const inicial = [
       "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
     time: "Frontend",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "DANIEL ARTINE",
@@ -48,6 +53,7 @@ export const inicial = [
       "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
     time: "Frontend",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "GUILHERME LIMA",
@@ -56,6 +62,7 @@ export const inicial = [
       "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
     time: "Frontend",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "PAULO SILVEIRA",
@@ -64,6 +71,7 @@ export const inicial = [
       "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
     time: "Frontend",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "JULIANA AMOASEI",
@@ -72,6 +80,7 @@ export const inicial = [
       "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
     time: "Data Science",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "DANIEL ARTINE",
@@ -80,6 +89,7 @@ export const inicial = [
       "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
     time: "Data Science",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "GUILHERME LIMA",
@@ -88,6 +98,7 @@ export const inicial = [
       "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
     time: "Data Science",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "PAULO SILVEIRA",
@@ -96,6 +107,7 @@ export const inicial = [
       "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
     time: "Data Science",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "JULIANA AMOASEI",
@@ -105,6 +117,7 @@ export const inicial = [
     time: "Devops",
 
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "DANIEL ARTINE",
@@ -114,6 +127,7 @@ export const inicial = [
     time: "Devops",
 
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "GUILHERME LIMA",
@@ -123,6 +137,7 @@ export const inicial = [
     time: "Devops",
 
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "PAULO SILVEIRA",
@@ -132,6 +147,7 @@ export const inicial = [
     time: "Devops",
 
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "JULIANA AMOASEI",
@@ -140,6 +156,7 @@ export const inicial = [
       "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
     time: "UX e Design",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "DANIEL ARTINE",
@@ -148,6 +165,7 @@ export const inicial = [
       "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
     time: "UX e Design",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "GUILHERME LIMA",
@@ -156,6 +174,7 @@ export const inicial = [
       "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
     time: "UX e Design",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "PAULO SILVEIRA",
@@ -164,6 +183,7 @@ export const inicial = [
       "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
     time: "UX e Design",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "JULIANA AMOASEI",
@@ -173,6 +193,7 @@ export const inicial = [
     time: "Mobile",
 
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "DANIEL ARTINE",
@@ -182,6 +203,7 @@ export const inicial = [
     time: "Mobile",
 
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "GUILHERME LIMA",
@@ -191,6 +213,7 @@ export const inicial = [
     time: "Mobile",
 
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "PAULO SILVEIRA",
@@ -200,6 +223,7 @@ export const inicial = [
     time: "Mobile",
 
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "JULIANA AMOASEI",
@@ -208,6 +232,7 @@ export const inicial = [
       "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
     time: "Inovação e Gestão",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "DANIEL ARTINE",
@@ -216,6 +241,7 @@ export const inicial = [
       "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
     time: "Inovação e Gestão",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "GUILHERME LIMA",
@@ -224,6 +250,7 @@ export const inicial = [
       "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
     time: "Inovação e Gestão",
     id: uuidv4(),
+    favorite: false,
   },
   {
     nome: "PAULO SILVEIRA",
@@ -232,5 +259,6 @@ export const inicial = [
       "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
     time: "Inovação e Gestão",
     id: uuidv4(),
+    favorite: false,
   },
 ];
