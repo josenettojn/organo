@@ -1,5 +1,5 @@
 import "./Form.css";
-import { TextField } from "../TextField/index";
+import { Field } from "../Field";
 import { DropDown } from "../DropDown/DropDown";
 import { Button } from "../Button";
 import { useState } from "react";
@@ -33,21 +33,21 @@ export const Formulario = (props) => {
     <section className="formulario">
       <form onSubmit={whenSave}>
         <h2>Preencha os dados para criar o card do colaborador</h2>
-        <TextField
+        <Field
           required={true}
           name="Nome"
           placeholder="Digite seu nome"
           value={nome}
           whenChanging={(value) => setNome(value)}
         />
-        <TextField
+        <Field
           required={true}
           name="Cargo"
           placeholder="Digite seu cargo"
           value={cargo}
           whenChanging={(value) => setCargo(value)}
         />
-        <TextField
+        <Field
           required={true}
           name="Imagem"
           placeholder="Insira o endereço da imagem"
@@ -77,14 +77,15 @@ export const Formulario = (props) => {
         }}
       >
         <h2>Preencha os dados para criar um novo time</h2>
-        <TextField
+        <Field
           required
           name="Nome"
           placeholder="Digite o nome do time"
           value={nomeTime}
           whenChanging={(value) => setNomeTime(value)}
         />
-        <TextField
+        <Field
+          type="color"
           required
           name="Cor"
           placeholder="Digite a cor do time"
