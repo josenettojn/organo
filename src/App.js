@@ -4,13 +4,18 @@ import { Formulario } from "./componentes/Form/Form";
 import { Time } from "./componentes/Time";
 import { times } from "./data/Time";
 import { Footer } from "./componentes/Footer";
+import { inicial } from "./data/TimeInicial";
 
 function App() {
-  const [collaborators, setCollaborators] = useState([]);
-  debugger;
+  const [collaborators, setCollaborators] = useState(inicial);
   const newCollaboratorsAdded = (collaborator) => {
     setCollaborators([...collaborators, collaborator]);
   };
+
+  function whenDeletingCollaborator() {
+    console.log("removendo colaborador");
+  }
+
   return (
     <div className="App">
       <Banner />
@@ -29,6 +34,7 @@ function App() {
           colaboradores={collaborators.filter(
             (colaborador) => colaborador.time === time.nome
           )}
+          whenDeleting={whenDeletingCollaborator}
         />
       ))}
 
