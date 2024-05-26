@@ -7,10 +7,15 @@ export const Colaborador = ({
   imagem,
   corDeFundo,
   whenDeleting,
+  id,
 }) => {
   return (
     <div className="colaborador">
-      <AiFillCloseCircle size={25} className="deletar" onClick={whenDeleting} />
+      <AiFillCloseCircle
+        size={25}
+        className="deletar"
+        onClick={() => whenDeleting(id)}
+      />
 
       <div className="cabecalho" style={{ backgroundColor: corDeFundo }}>
         <img src={imagem} alt={nome} />

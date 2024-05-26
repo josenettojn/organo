@@ -1,6 +1,11 @@
 .time {
   text-align: center;
   padding: 32px;
+  position: relative;
+  background-image: url(/public/imagens/fundo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .time h3 {
   font-size: 32px;
@@ -13,4 +18,9 @@
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 32px;
+}
+.input-color {
+  position: absolute;
+  top: 20px;
+  right: 50px;
 }
