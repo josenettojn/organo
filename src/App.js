@@ -66,10 +66,15 @@ function App() {
     );
   }
 
+  function registerTeam(newTeam) {
+    setTimes([...times, { ...newTeam, id: uuidv4() }]);
+  }
+
   return (
     <div className="App">
       <Banner />
       <Formulario
+        registerTeam={registerTeam}
         times={times.map((time) => time.nome)}
         registeredCollaborators={(collaborator) =>
           newCollaboratorsAdded(collaborator)

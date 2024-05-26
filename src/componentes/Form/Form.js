@@ -3,12 +3,15 @@ import { TextField } from "../TextField/index";
 import { DropDown } from "../DropDown/DropDown";
 import { Button } from "../Button";
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 export const Formulario = (props) => {
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
   const [imagem, setImagem] = useState("");
   const [time, setTime] = useState("");
+  const [nomeTime, setNomeTime] = useState("");
+  const [corTime, setCorTime] = useState("");
 
   const whenSave = (e) => {
     e.preventDefault();
@@ -17,6 +20,7 @@ export const Formulario = (props) => {
       cargo,
       imagem,
       time,
+      id: uuidv4(),
     });
 
     setNome("");
@@ -58,6 +62,36 @@ export const Formulario = (props) => {
           whenChanging={(value) => setTime(value)}
         />
         <Button>Criar Card</Button>
+      </form>
+
+      <form
+        onSubmit={(event) => {
+          event.preventDefault();
+          props.registerTeam({
+            nome: nomeTime,
+            cor: corTime,
+            id: uuidv4(),
+          });
+          setNomeTime("");
+          setCorTime("");
+        }}
+      >
+        <h2>Preencha os dados para criar um novo time</h2>
+        <TextField
+          required
+          name="Nome"
+          placeholder="Digite o nome do time"
+          value={nomeTime}
+          whenChanging={(value) => setNomeTime(value)}
+        />
+        <TextField
+          required
+          name="Cor"
+          placeholder="Digite a cor do time"
+          value={corTime}
+          whenChanging={(value) => setCorTime(value)}
+        />
+        <Button>Criar um time</Button>
       </form>
     </section>
   );
